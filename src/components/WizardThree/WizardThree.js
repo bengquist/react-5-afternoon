@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
 import { connect } from "react-redux";
 import { updateProp } from "../../ducks/reducer";
 
@@ -21,6 +22,7 @@ class WizardThree extends Component {
                 Primary Home
               </button>
             </Link>
+
             <Link to="/wFour">
               <button
                 value="rentalProperty"
@@ -29,6 +31,7 @@ class WizardThree extends Component {
                 Rental Property
               </button>
             </Link>
+
             <Link to="/wFour">
               <button
                 value="secondaryHome"

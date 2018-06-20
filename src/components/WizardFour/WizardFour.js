@@ -6,16 +6,21 @@ import { updateFound } from "../../ducks/reducer";
 
 class WizardFour extends Component {
   render() {
+    const { updateFound } = this.props;
+
     return (
       <div className="parent-div">
         <div className="vert-align">
-          <p>Have you already found your new home?</p> <br />
+          <p>Have you already found your new home?</p>
+          <br />
+
           <div className="row">
             <Link to="/wFive">
               <button onClick={e => updateFound(true)}>Yes</button>
             </Link>
+
             <Link to="/wFive">
-              <button onClick={e => updateFound(false)}>No </button>
+              <button onClick={e => updateFound(false)}>No</button>
             </Link>
           </div>
         </div>
